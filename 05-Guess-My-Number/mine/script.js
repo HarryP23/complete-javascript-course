@@ -1,2 +1,3 @@
 'use strict';
-test
+
+console.log(document.querySelector('.message'));
