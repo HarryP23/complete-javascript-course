@@ -8,6 +8,7 @@
 
 // console.log(calcAge(2002));
 
+/*
 const measureKelvin = function () {
   const measurement = {
     type: "temp",
@@ -20,6 +21,7 @@ const measureKelvin = function () {
   const kelvin = measurement.value + 273;
   return kelvin;
 };
+/*
 
 // console.log(measureKelvin());
 // console.warn(measureKelvin());
@@ -40,4 +42,18 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 const testdata1 = [17, 21, 23];
 const testdata2 = [12, 5, -5, 0, 4];
 
-const printForecast = function () {};
+console.log(`... ${testdata1[0]} ... ${testdata1[1]}`);
+console.log(
+  `... ${testdata1[0]}ºC ... ${testdata1[1]}ºC ... ${testdata1[2]}ºC ...`
+);
+
+const printForecast = function (arr) {
+  let str = "";
+  for (var i = 0; i < arr.length; i++) {
+    str += `... ${arr[0]}ºC in ${i + 1} days`;
+  }
+  console.log(str + "...");
+};
+
+printForecast(testdata1);
+printForecast(testdata2);
